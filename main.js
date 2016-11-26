@@ -14,6 +14,7 @@ $(document).ready(function() {
         $('#img-loading').attr('src', 'https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-128.png');
         setTimeout(function() {
             window.location.href = '#home';
+            $('#music').trigger('play');
         }, 1500);
     }, 3000);
 
