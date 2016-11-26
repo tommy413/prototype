@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EZoApp</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob: filesystem:">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Export CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Uncomment the following to include cordova in your app project -->
+    <!-- <script src="https://ezoui.com/platforms/android_or_ios/cordova.js"></script> -->
+    <!-- GK Loader use RequireJS to load module -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.16/require.min.js"></script>
+    <!--Plug in GK-->
+    <script src="https://ezoui.com/components/jquery.gk/jquery.gk.min.js"></script>
+    <!-- Load GK components -->
+    <script components="https://ezoui.com/components/gk-ext/gk-text.html,//ezoui.com/components/gk-ext/image.html" callback="mobileInitPage" src="https://ezoui.com/components/gk-loader/gk-loader.min.js"></script>
+    <!-- Export JS  -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- Page: loading  -->
+    <div id="loading" data-role="page">
+        <div role="main" class="ui-content">
+            <img src="http://i.imgur.com/5YbQJ1l.png" is="image" class="center" id="icon">
+            <h1 is="gk-text" class="center" style="color:white" id="text-detect">偵測耳機</h1>
+            <img style="width:20%;" src="https://66.media.tumblr.com/c52372a97a623c9943c5b7855cfb6672/tumblr_mjd0lsp0Fp1ri9266o1_500.gif" is="image" class="center" id="img-loading">
+        </div>
+    </div>
+</body>
+
+</html>
